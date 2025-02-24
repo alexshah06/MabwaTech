@@ -8,12 +8,9 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import java.util.List;
 
 @Entity
-@Getter
-@Setter
+@Getter @Setter
 @NoArgsConstructor
 public class MtUser {
-
-    private final BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
